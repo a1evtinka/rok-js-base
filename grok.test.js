@@ -2,9 +2,9 @@ const funcEasy1 = require('./Easy/1.js')
 const funcEasy2 = require('./Easy/2.js')
 const funcEasy3 = require("./Easy/3.js")
 
-const funcNormal1 = require('./Normal/1.js')
-const funcNormal2 = require('./Normal/2.js')
-const funcNormal3 = require('./Normal/3.js')
+const funcMedium1 = require('./Medium/1.js')
+const funcMedium2 = require('./Medium/2.js')
+const funcMedium3 = require('./Medium/3.js')
 
 const funcHard1 = require('./Hard/1.js')
 const funcHard2 = require('./Hard/2.js')
@@ -42,7 +42,7 @@ describe('Легкий уровень', () => {
 describe('Средний уровень', () => {
   test('console.log каждого символа строки', () => {
     console.log = jest.fn();
-    funcNormal1('Elbrus');
+    funcMedium1('Elbrus');
     expect(console.log).toHaveBeenCalledWith('E');
     expect(console.log).toHaveBeenCalledWith('l');
     expect(console.log).toHaveBeenCalledWith('b');
@@ -52,15 +52,15 @@ describe('Средний уровень', () => {
   });
 
   test('Массив чисел от 0 до 10 расположенных в случайном порядке', () => {
-    expect(funcNormal2()).not.toEqual(funcNormal2())
-    expect(funcNormal2()).not.toEqual(funcNormal2())
-    expect(funcNormal2()).not.toEqual(funcNormal2())
+    expect(funcMedium2()).not.toEqual(funcMedium2())
+    expect(funcMedium2()).not.toEqual(funcMedium2())
+    expect(funcMedium2()).not.toEqual(funcMedium2())
   });
 
   test('Сумма чисел в заданном диапазоне', () => {
-    expect(funcNormal3(1, 10)).toBe(55)
-    expect(funcNormal3(4, 4)).toBe(4)
-    expect(funcNormal3(5, 3)).toBe(12)
+    expect(funcMedium3(1, 10)).toBe(55)
+    expect(funcMedium3(4, 4)).toBe(4)
+    expect(funcMedium3(5, 3)).toBe(12)
   });
 
 })
