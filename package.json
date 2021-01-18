@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RostislavBartenev/js-grok.git"
+    "url": "git+https://github.com/Elbrus-Bootcamp/grok-js-base"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RostislavBartenev/js-grok/issues"
+    "url": "https://github.com/Elbrus-Bootcamp/grok-js-base/issues"
   },
-  "homepage": "https://github.com/RostislavBartenev/js-grok#readme",
+  "homepage": "https://github.com/Elbrus-Bootcamp/grok-js-base#readme",
   "devDependencies": {
     "jest": "^26.6.3"
   },
