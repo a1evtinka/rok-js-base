@@ -40,18 +40,21 @@ describe('Легкий уровень', () => {
 })
 
 describe('Средний уровень', () => {
-  test('console.log каждого символа строки', () => {
+  test('Вывод каждого символа строки в консоль', () => {
     console.log = jest.fn();
     funcMedium1('Elbrus');
-    expect(console.log).toHaveBeenCalledWith('E');
-    expect(console.log).toHaveBeenCalledWith('l');
-    expect(console.log).toHaveBeenCalledWith('b');
-    expect(console.log).toHaveBeenCalledWith('r');
-    expect(console.log).toHaveBeenCalledWith('u');
-    expect(console.log).toHaveBeenCalledWith('s');
+    expect(console.log).toHaveBeenCalledWith('E')
+    expect(console.log).toHaveBeenCalledWith('l')
+    expect(console.log).toHaveBeenCalledWith('b')
+    expect(console.log).toHaveBeenCalledWith('r')
+    expect(console.log).toHaveBeenCalledWith('u')
+    expect(console.log).toHaveBeenCalledWith('s')
   });
 
   test('Массив чисел от 0 до 10 расположенных в случайном порядке', () => {
+    const expected = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    expect(funcMedium2()).toEqual(expect.arrayContaining(expected))
+    expect(funcMedium2().length).toBe(11)
     expect(funcMedium2()).not.toEqual(funcMedium2())
     expect(funcMedium2()).not.toEqual(funcMedium2())
     expect(funcMedium2()).not.toEqual(funcMedium2())
