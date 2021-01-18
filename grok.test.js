@@ -51,12 +51,15 @@ describe('Средний уровень', () => {
     expect(console.log).toHaveBeenCalledWith('s')
   });
 
-  test('Массив чисел от 0 до 10 расположенных в случайном порядке', () => {
-    const expected = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-    expect(funcMedium2()).toEqual(expect.arrayContaining(expected))
-    expect(funcMedium2().length).toBe(11)
-    expect(funcMedium2()).not.toEqual(funcMedium2())
-    expect(funcMedium2()).not.toEqual(funcMedium2())
+  test('Массив из 10 случайных целых чисел от 0 до 10', () => {
+    const array = funcMedium2()
+    expect(array).toHaveLength(10)
+    for (let i = 0; i < array.length; i++) {
+      expect(Number.isInteger(array[i])).toBe(true)
+      expect(array[i]).toBeGreaterThanOrEqual(0)
+      expect(array[i]).toBeLessThanOrEqual(10)
+      
+    }
     expect(funcMedium2()).not.toEqual(funcMedium2())
   });
 
