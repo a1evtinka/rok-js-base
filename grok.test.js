@@ -12,13 +12,13 @@ const funcHard3 = require('./Hard/3.js')
 
 describe('Легкий уровень', () => {
 
-  test('Создайте функцию, которая будет принимать массив из слов и возвращать предложение', () => {
+  test('Предложение из массива слова', () => {
     expect(funcEasy1(['Привет', 'мир', '!'])).toBe('Привет мир !')
     expect(funcEasy1(['Грок', 'JS'])).toBe('Грок JS')
     expect(funcEasy1(['Grok', 'Marathon', 'Решение', 'задач'])).toBe('Grok Marathon Решение задач')
   })
 
-  test('Создайте функцию, которая первым аргументом получает объект, а вторым ключ объекта и возвращает значение', () => {
+  test('Значение объекта по ключу', () => {
     const obj = {
       'Коля':'1000',
       'Вася':'500',
@@ -30,7 +30,7 @@ describe('Легкий уровень', () => {
 
   })
 
-  test('Создайте функцию, которая принимает многомерный массив чисел и число и возвращает индекс в котором это число нахродится', () => {
+  test('Индекс вложенного массива, содержащего заданное числом', () => {
     const arr = [[1, 2, 3], [4, 5, 6], [7,8,9]]
     expect(funcEasy3(arr, 3)).toBe(0)
     expect(funcEasy3(arr, 9)).toBe(2)
@@ -40,7 +40,7 @@ describe('Легкий уровень', () => {
 })
 
 describe('Средний уровень', () => {
-  test('Создайте функцию, которая будет принимать строку и возвращать буквы этой строки', () => {
+  test('console.log каждого символа строки', () => {
     console.log = jest.fn();
     funcNormal1('Elbrus');
     expect(console.log).toHaveBeenCalledWith('E');
@@ -51,13 +51,13 @@ describe('Средний уровень', () => {
     expect(console.log).toHaveBeenCalledWith('s');
   });
 
-  test('Массив из случайных чисел', () => {
+  test('Массив чисел от 0 до 10 расположенных в случайном порядке', () => {
     expect(funcNormal2()).not.toEqual(funcNormal2())
     expect(funcNormal2()).not.toEqual(funcNormal2())
     expect(funcNormal2()).not.toEqual(funcNormal2())
   });
 
-  test('Сумма диапазона чисел', () => {
+  test('Сумма чисел в заданном диапазоне', () => {
     expect(funcNormal3(1, 10)).toBe(55)
     expect(funcNormal3(4, 4)).toBe(4)
     expect(funcNormal3(5, 3)).toBe(12)
