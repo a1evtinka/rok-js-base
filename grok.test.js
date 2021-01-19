@@ -12,7 +12,7 @@ const funcHard3 = require('./Hard/3.js')
 
 describe('Легкий уровень', () => {
 
-  test('Предложение из массива слова', () => {
+  test('Предложение из массива слов', () => {
     expect(funcEasy1(['Привет', 'мир', '!'])).toBe('Привет мир !')
     expect(funcEasy1(['Грок', 'JS'])).toBe('Грок JS')
     expect(funcEasy1(['Grok', 'Marathon', 'Решение', 'задач'])).toBe('Grok Marathon Решение задач')
@@ -30,7 +30,7 @@ describe('Легкий уровень', () => {
 
   })
 
-  test('Индекс вложенного массива, содержащего заданное числом', () => {
+  test('Индекс вложенного массива, содержащего заданное число', () => {
     const arr = [[1, 2, 3], [4, 5, 6], [7,8,9]]
     expect(funcEasy3(arr, 3)).toBe(0)
     expect(funcEasy3(arr, 9)).toBe(2)
