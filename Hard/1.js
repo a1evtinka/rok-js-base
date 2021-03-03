@@ -8,7 +8,7 @@
 
 */
 
-const validTriangle = (a, b, c) => {
+const validTriangle = () => {
   /* Тут код*/
 }
 
