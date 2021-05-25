@@ -1,30 +1,31 @@
 # grok-js-base 🐣
 
-### Как с этим работать
-В директории проекта находится 3 папки c упражнениями, разбитыми по сложности. В каждой папке три файла. Один файл - одно упражнение.  
+### How to use
+The project directory contains three folders with exercises broken down by difficulty with three files in each. One file = one exercise.
   
-#### Чтобы проверить себя, используйте тесты:
-1. После того, как склонировали репозиторий, в папке проекта откройте консоль и выполните команду  `npm i`
-2. После выполнения каждого упражнения запускайте тестирование с помощью команды `npm test`
+#### Use tests to test your knowledge:
 
-#### Чтобы посмотреть какие тесты вы прошли, прокрутите консоль вверх:  
+1. After cloning the repository, open terminal in your project folder and run the command `npm i`
+2. After completing an exercise, run the command `npm test` to validate your code
+
+#### To see which tests you passed, scroll up in terminal:
   
 ![All Tests](./assets/all_tests.png)  
 
-#### Чтобы узнать больше информации о не пройденном тесте, посмотрите:  
+#### For more information on test failures, see:
 ```  
-Expected: что ожидал тест  
-Received: что получилось у вас  
+Expected: what the test expected  
+Received: what you received  
 ```  
 ![Test Details](./assets/test_details.png)  
 
 ### Release 0
-Выполните легкие упражнения из папки **Easy**  
+Complete the exercises in the **Easy** folder
 
 ### Release 1
-Выполните упражнения средней сложности из папки **Medium**  
+Complete the exercises in the **Medium** folder
 
 ### Release 2
-Выполните сложные упражнения из папки **Hard**. В этих заданиях тебе нужно прописать аргументы функций самому.  
+Complete the exercises in the **Hard** folder. In these assignments, you will need to write the function arguments yourself.   
 
-⚠️ Обратите внимание, когда будете пушить проект, что главная ветка в этом репозитории называется main, а не master.
+⚠️ When pushing, take note that the master branch in this repository is called main-eng, not master-eng.
