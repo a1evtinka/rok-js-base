@@ -10,27 +10,27 @@ const funcHard1 = require('./Hard/1.js')
 const funcHard2 = require('./Hard/2.js')
 const funcHard3 = require('./Hard/3.js')
 
-describe('Легкий уровень', () => {
+describe('Easy', () => {
 
-  test('Предложение из массива слов', () => {
-    expect(funcEasy1(['Привет', 'мир', '!'])).toBe('Привет мир !')
-    expect(funcEasy1(['Грок', 'JS'])).toBe('Грок JS')
-    expect(funcEasy1(['Grok', 'Marathon', 'Решение', 'задач'])).toBe('Grok Marathon Решение задач')
+  test('Sentence from an array of words', () => {
+    expect(funcEasy1(['Hello', 'World', '!'])).toBe('Hello World !')
+    expect(funcEasy1(['Grok', 'JS'])).toBe('Grok JS')
+    expect(funcEasy1(['Grok', 'Marathon', 'Problem', 'Solving'])).toBe('Grok Marathon Problem Solving')
   })
 
-  test('Значение объекта по ключу', () => {
+  test("Get an object's values using a key", () => {
     const obj = {
-      'Коля':'1000',
-      'Вася':'500',
-      'Петя':'200'
+      'James':'1000',
+      'Emma':'500',
+      'Robert':'200'
     }
-    expect(funcEasy2(obj, 'Петя')).toBe('200')
-    expect(funcEasy2(obj, 'Коля')).toBe('1000')
-    expect(funcEasy2(obj, 'Вася')).toBe('500')
+    expect(funcEasy2(obj, 'Robert')).toBe('200')
+    expect(funcEasy2(obj, 'James')).toBe('1000')
+    expect(funcEasy2(obj, 'Emma')).toBe('500')
 
   })
 
-  test('Индекс вложенного массива, содержащего заданное число', () => {
+  test("A given number's index in a 2D array", () => {
     const arr = [[1, 2, 3], [4, 5, 6], [7,8,9]]
     expect(funcEasy3(arr, 3)).toBe(0)
     expect(funcEasy3(arr, 9)).toBe(2)
@@ -39,8 +39,8 @@ describe('Легкий уровень', () => {
   })
 })
 
-describe('Средний уровень', () => {
-  test('Вывод каждого символа строки в консоль', () => {
+describe('Medium', () => {
+  test('Outputting each character of a string in the terminal console', () => {
     console.log = jest.fn();
     funcMedium1('Elbrus');
     expect(console.log).toHaveBeenCalledWith('E')
@@ -51,7 +51,7 @@ describe('Средний уровень', () => {
     expect(console.log).toHaveBeenCalledWith('s')
   });
 
-  test('Массив из 10 случайных целых чисел от 0 до 10', () => {
+  test('Array of 10 random integers from 0 to 10', () => {
     const array = funcMedium2()
     expect(array).toHaveLength(10)
     for (let i = 0; i < array.length; i++) {
@@ -63,7 +63,7 @@ describe('Средний уровень', () => {
     expect(funcMedium2()).not.toEqual(funcMedium2())
   });
 
-  test('Сумма чисел в заданном диапазоне', () => {
+  test('Sum of numbers in a given range', () => {
     expect(funcMedium3(1, 10)).toBe(55)
     expect(funcMedium3(4, 4)).toBe(4)
     expect(funcMedium3(5, 3)).toBe(12)
@@ -71,9 +71,9 @@ describe('Средний уровень', () => {
 
 })
 
-describe('Сложный уровень', () => {
+describe('Hard', () => {
 
-  test('Треугольник, имеющий правильные значения', () => {
+  test('Triangle with correct values', () => {
     expect(funcHard1(0,0,0)).toBe(false)
     expect(funcHard1(1,1,1)).toBe(true)
     expect(funcHard1(3,4,5)).toBe(true)
@@ -82,7 +82,7 @@ describe('Сложный уровень', () => {
     expect(funcHard1(10, 10, 100)).toBe(false)
   });
 
-  test('Самая длинная строка', () => {
+  test('Longest string', () => {
     expect(funcHard2([])).toBe(null)
     expect(funcHard2(['cat', 'applesauce', 'apples'])).toBe('applesauce')
     expect(funcHard2(['js', 'node', 'express', 'mongoose'])).toBe('mongoose')
