@@ -5,10 +5,10 @@ The project directory contains three folders with exercises broken down by diffi
   
 #### Use tests to test your knowledge:
 
-1. After cloning the repository, open terminal in your project folder and run the command `npm i`
+1. After cloning the repository, open console in your project folder and run the command `npm i`
 2. After completing an exercise, run the command `npm test` to validate your code
 
-#### To see which tests you passed, scroll up in terminal:
+#### To see which tests you passed, scroll up in console:
   
 ![All Tests](./assets/all_tests.png)  
 
