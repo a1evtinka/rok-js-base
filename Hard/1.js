@@ -1,17 +1,16 @@
 /*
 
-Создайте функцию, которая принимает в качестве аргументов три неотрицательных числа, а возвращает значение true («истина»), если три стороны могут сформировать треугольник,
-и false («ложь») в противоположном случае.  
-Каждое число представляет собой длину стороны треугольника. 
+Create a function with 3 non-negative numbers as arguments, which returns true if you can form a triangle with these 3 numbers and false otherwise.
+Each number represents a triangle's side length.
 
-Пример: (3, 4, 5) => true  
+Example: (3, 4, 5) => true
   
-Для начала пропиши аргументы функции.  
+First, write the function's arguments.
 
 */
 
 const validTriangle = () => {
-  /* Тут код*/
+  /* code here */
 }
 
 module.exports = validTriangle
