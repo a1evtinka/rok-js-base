@@ -1,13 +1,13 @@
 /*
 
-Создайте функцию, которая принимает в качестве аргументов многомерный массив (массив, содержащий другие массивы) чисел и число из одного из вложенных массивов, а возвращает индекс вложенного массива, в котором это число находится.
+Create a function with 2 arguments: a multidimensional array (an array containing other arrays) of numbers and a number from one of the nested arrays. Return the passed number's index in the nested array.
 
-Пример: ( [[1], [2, 3], [4]], 3 ) => 1
+Example: ([[1], [2, 3], [4]], 3) => 1
 
 */
 
 const nestedArr = (arr, number) => {
-  /* Тут код*/
+  /* code here */
 }
 
 module.exports = nestedArr
