@@ -1,13 +1,13 @@
 /*
 
-Создайте функцию, которая возвращает массив из 10 случайных целых чисел от 0 до 10.
+Create a function that returns an array of 10 random integers from 0 to 10.
 
-Пример: () => [ 0, 1, 2, 2, 7, 4, 3, 2, 6, 3 ]
+Example: () => [0, 1, 2, 2, 7, 4, 3, 2, 6, 3]
 
 */
 
 const randomArr = () => {
-  /* Тут код*/
+  /* code here */
 }
 
 module.exports = randomArr
