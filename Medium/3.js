@@ -1,15 +1,15 @@
 /*
 
-Создайте функцию, которая принимает в качестве аргументов 2 неотрицательных числа, а возвращает сумму всех целых чисел в диапазоне между ними.
+Create a function that takes 2 non-negative numbers as arguments and returns the sum of all integers in the range between them.
 
-Первое число может больше второго!
+The first number may be greater than the second!
 
-Пример: (5, 3) => 12
+Example: (5, 3) => 12
 
 */
 
 const sumOfIntegers = (start, end) => {
-  /* Тут код*/
+  /* code here */
 }
 
 module.exports = sumOfIntegers
