@@ -1,11 +1,10 @@
 /*
 
-Создайте функцию, которая принимает в качестве аргумента строку и выводит каждый символ этой строки в консоль.
-
+Create a function with a string as an argument and print each character of that string in the console.
 */
 
 const logEachLetter = (str) => {
-  /* Тут код*/
+  /* code here */
 }
 
 module.exports = logEachLetter
