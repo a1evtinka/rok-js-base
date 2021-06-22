@@ -1,14 +1,16 @@
 /*
 
-Создайте функцию, которая принимает в качестве аргументов массив из слов, а возвращает созданное из этих слов предложение.  
+Create a function with 1 argument: an array of words and return a concatenated sentence.
 
-Пример: ['I', 'am', 'groot'] => 'I am groot'
+Example: ['I', 'am', 'groot'] => 'I am groot'
 
 */
 
 
 const toSentence = (arr) => {
-  /* Тут код*/
+  /* code here */
 }
 
 module.exports = toSentence
+
+
