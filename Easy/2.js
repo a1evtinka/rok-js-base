@@ -1,13 +1,13 @@
 /*
 
-Создайте функцию, которая принимает в качестве аргументов объект и ключ объекта, а возвращает значение объекта, доступное по этому ключу.
+Create a function with 2 arguments: an object and the object's key and return the object's value corresponding to the passed key.
 
-Пример: ({ 'key': 'property' }, 'key') => 'property'
+Example: ({'key': 'property'}, 'key') => 'property'
 
 */
 
 const objValue = (obj, key) => {
-  /* Тут код*/
+  /* code here */
 }
 
 module.exports = objValue
