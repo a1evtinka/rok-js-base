@@ -1,15 +1,15 @@
 /*
 
-  Создайте функцию, которая убирает из строки символ "_", а следующую за "_" букву делает заглавной
+Create a function that removes the "_" character from a string and capitalizes the letter following the "_"
 
-  Для начала пропиши аргументы функции.  
+ First, write the function's arguments.
 
-  Пример: 'elbrus_bootcamp' => 'elbrusBootcamp'
+ Example: 'elbrus_bootcamp' => 'elbrusBootcamp'
 
 */
 
 const camelCase = () => {
-  /* Тут код*/
+  /* code here */
 }
 
 
