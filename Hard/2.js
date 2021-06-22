@@ -1,17 +1,17 @@
 /*
 
-Создайте функцию, которая принимает в качестве аргументов массив строк, а возвращает первый самый длинный элемент массива.
-Если входной массив пуст, функция возвращает null.
-Если есть несколько одинаковых по длине элементов - функция возвращает первый из этих элементов.
+Create a function with 1 argument: an array of strings and return the first longest element in the array.
+If the input array is empty, return null.
+If there are several elements with the same length, return the first of these elements.
 
-Для начала пропиши аргументы функции.  
+First, write the function's arguments.
 
-Пример: [ 'one', 'two', 'three' ] => 'three'
+Example: ['one', 'two', 'three'] => 'three' 
 
 */
 
 const longestString = () => {
-  /* Тут код*/
+  /* code here */
 }
 
 module.exports = longestString
