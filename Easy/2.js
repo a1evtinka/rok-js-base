@@ -7,7 +7,7 @@
 */
 
 const objValue = (obj, key) => {
-  /* Тут код*/
-}
+  console.log(obj[key]);
+};
 
 module.exports = objValue

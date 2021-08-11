@@ -6,9 +6,12 @@
 
 */
 
-
+arr = ['I', 'am', 'groot'];
 const toSentence = (arr) => {
-  /* Тут код*/
-}
+  string = arr.join(' ');
+  console.log(string);
+};
+
+toSentence(arr);
 
 module.exports = toSentence
