@@ -6,8 +6,14 @@
 
 */
 
+array = [];
 const randomArr = () => {
-  /* Тут код*/
-}
+  for (let i = 0; i<10; i++) {
+    let newNumber = Math.floor(Math.random() * 10);
+    array.push(newNumber);
+  }
+  console.log(array);
+};
 
+randomArr();
 module.exports = randomArr

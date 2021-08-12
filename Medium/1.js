@@ -5,7 +5,10 @@
 */
 
 const logEachLetter = (str) => {
-  /* Тут код*/
-}
+  for (var i = 0; i < str.length; ++i) {
+    console.log(str[i]);
+  }
+};
 
-module.exports = logEachLetter
+logEachLetter('ABVADASDASDAS');
+module.exports = logEachLetter;
