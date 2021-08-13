@@ -8,9 +8,11 @@
 
 */
 
-const camelCase = () => {
-  /* Тут код*/
+const camelCase = (string) => {
+  let index = string.indexOf('_');
+  let updatedString = string[index+1].toUpperCase();
+  console.log(finalString);
 }
 
-
+camelCase('elbrus_bootcamp');
 module.exports = camelCase
