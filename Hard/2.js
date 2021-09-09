@@ -11,20 +11,20 @@
 */
 const longestString = (array) => {
   let counter = 0;
-  for (let i = 0; i < array.length; i++){
-    if (array.length == 0){
-      console.log('null')
-    } else {
+  let word;
+  if (array.length == 0) {
+    console.log('null') 
+  } else {
+    for (let i = 0; i < array.length; i++) {
       let length = array[i].length
       if (length > counter) {
         counter = length;
-      }
-    }
-  }
-  console.log(counter);
-};
-
-
-array = ['one', 'two', 'three', 'four', 'thousands', 'millions'];
+        word = array[i];
+      };
+    };
+  };
+  return console.log(word);
+}
+array = ['one', 'two', 'three', 'four', 'thousands', 'millions', 'ilovejustinbieber'];
 longestString(array);
 module.exports = longestString

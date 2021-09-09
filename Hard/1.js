@@ -11,13 +11,17 @@
 
 */
 
+
+/*
+Треугольником не является любая фигура у которой нет трех любых углов или один из углов меньше нуля. 
+*/ 
 const validTriangle = (one, two, three) => {
-  if (one || two || three == 0) {
+  if (one<=0 || two<=0 || three<=0) {
     return console.log('false');
   } else {
     return console.log('true');
   }
 };
 
-validTriangle(1, 1 ,1);
+validTriangle(1, 0 ,1);
 module.exports = validTriangle

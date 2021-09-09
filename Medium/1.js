@@ -12,3 +12,4 @@ const logEachLetter = (str) => {
 
 logEachLetter('ABVADASDASDAS');
 module.exports = logEachLetter;
+
