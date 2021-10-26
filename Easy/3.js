@@ -7,7 +7,17 @@
 */
 
 const nestedArr = (arr, number) => {
-  /* Тут код*/
-}
+  for( let i = 0; i < arr.length; i++){
+    for( let j = 0; j < arr[i].length; j++){
+      if(arr[i][j] === number){
+        return i;
+      } 
+    }
+    
+  }
+};
 
-module.exports = nestedArr
+module.exports = nestedArr;
+
+
+

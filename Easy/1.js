@@ -8,7 +8,10 @@
 
 
 const toSentence = (arr) => {
-  /* Тут код*/
-}
+   let str = arr.join(' ');
+   return str;
+};
 
-module.exports = toSentence
+module.exports = toSentence;
+
+
