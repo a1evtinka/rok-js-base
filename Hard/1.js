@@ -10,8 +10,13 @@
 
 */
 
-const validTriangle = () => {
-  /* Тут код*/
-}
+const validTriangle = (a,b,c) => {
+  let flag = false;
+  if(a > 0 && b > 0 && c > 0 && a < 100 && b < 100 && c < 100){
+    flag = true;
+  }
+  return flag;
+};
+// почему не может быть сторона треугольника 100? Это странно, вот если бы строка один из аргументов, тогда логично
 
 module.exports = validTriangle

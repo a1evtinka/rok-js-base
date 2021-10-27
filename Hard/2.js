@@ -10,8 +10,22 @@
 
 */
 
-const longestString = () => {
-  /* Тут код*/
-}
+const longestString = (arr) => {
+  
+  if (arr.length === 0) {
+    return  null; 
+    
+  } else if (arr.length !== 0){
+
+    let maxLength = arr[0];
+
+      for( let i = 0; i < arr.length; i++){
+          if( maxLength.length < arr[i].length){
+            maxLength = arr[i];
+           } 
+          }
+    return maxLength;
+  } 
+};
 
 module.exports = longestString
